@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Capri Group Of Company - Import & Export Experts" />
+  <title>CAPRI</title>
+
+  <!-- Poppins font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    :root {
+      --primary: #4b0000;
+      --light-gradient: linear-gradient(to right, #fbd3e9, #bbd2c5);
+      --text-dark: #222;
+      --text-light: #fff;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: var(--primary);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: var(--text-light) !important;
+      font-size: 26px;
+    }
+
+    .nav-link {
+      color: var(--text-light) !important;
+      font-weight: 500;
+      margin-left: 15px;
+    }
+
+    .nav-link.active {
+      text-decoration: underline;
+    }
+
+    .small-toggler {
+      font-size: 20px;
+      border: none;
+      background: transparent;
+      color: white;
+    }
+
+    .small-toggler:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 15px;
+      text-align: center;
+    }
+
+    #home {
+      background: var(--light-gradient);
+      color: var(--text-dark);
+      flex-direction: column;
+    }
+
+    #home h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    #home p {
+      font-size: 1.3rem;
+      margin-top: 15px;
+    }
+
+    #services {
+      background-color: #f4eaea;
+    }
+
+    .section-header {
+      font-size: 2.8rem;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+
+    .service-card {
+      background: var(--card-bg);
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card i {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .service-card h5 {
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    #about {
+      background-color: #fff;
+      text-align: left;
+    }
+    a.text-dark {
+  text-decoration: none !important;
+}
+
+a.text-dark:hover {
+  text-decoration: none !important;
+}
+
+    .about-img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    #contact {
+      background-color: #f8f4f3;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: var(--text-light);
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80" tabindex="0">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">CAPRI</a>
+      <button class="navbar-toggler small-toggler" type="button" id="menuToggle">
+        <span class="fas fa-bars" id="toggleIcon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Welcome to Capri Group Of Company</h1>
+    <p>We bridge nations through trusted import and export services.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h2 class="section-header">Our Services</h2>
+      <div class="row g-5 justify-content-center">
+        <div class="col-md-4">
+          <div class="service-card">
+            <i class="fas fa-ship"></i>
+            <h5>Global Shipping Logistics</h5>
+            <p>We manage international freight, container coordination, and customs handling to ensure on-time and secure delivery of goods across the globe.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card">
+            <i class="fas fa-boxes"></i>
+            <h5>Import Procurement</h5>
+            <p>From raw materials to finished goods, we import quality-assured products efficiently, matching global supplier capabilities with your business needs.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card">
+            <i class="fas fa-globe"></i>
+            <h5>Export Distribution</h5>
+            <p>We help Indian manufacturers reach international markets through optimized export documentation, trade compliance, and logistics support.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-header text-center mb-5">About Us</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4">
+          <img src="/about.png" class="about-img" alt="About">
+        </div>
+        <div class="col-md-6">
+          <p><strong>Capri Group Of Company</strong> is a well-established leader in the international trade industry. We specialize in sourcing, importing, and exporting goods and services across various sectors including Fruits, electronics, construction materials, and more.</p>
+          <p>With a commitment to excellence, we ensure seamless trade operations through strong logistics partnerships, experienced compliance teams, and deep market understanding. Our focus is on reliability, transparency, and long-term client success.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-header">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6 mb-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.866410874072!2d79.80732407597549!3d11.91438398831213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5361002866ce5b%3A0xbe833b109b9657b1!2sCapri%20group%20of%20company!5e0!3m2!1sen!2sin!4v1751857253800!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-6">
+          <p><strong>Address:</strong><br>1, Velrampet Main Rd, Maraimalai Nagar, Thirumagal Nagar, Mudaliarpet, Puducherry, 605004</p>
+          <p><strong>Email:</strong> info@caprigoc.com</p>
+          <p><strong>Phone:</strong> +91 63833 57379</p>
+          <div class="mt-3">
+            <a href="https://www.linkedin.com/company/capri-group-of-companies/posts/?feedView=all" target="_blank" class="me-3 text-dark fs-4" title="Follow us on LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/themilkimulife" target="_blank" class="me-3 text-dark fs-4" title="Follow us on Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/916383357379" target="_blank" class="me-3 text-dark fs-4" title="Chat with us on WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Capri Group Of Company. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scroll and Toggle Menu Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleBtn = document.getElementById("menuToggle");
+      const toggleIcon = document.getElementById("toggleIcon");
+      const navbarCollapse = document.getElementById("navbarNav");
+
+      toggleBtn.addEventListener("click", () => {
+        navbarCollapse.classList.toggle("show");
+        toggleIcon.classList.toggle("fa-bars");
+        toggleIcon.classList.toggle("fa-times");
+      });
+
+      document.addEventListener("click", function (event) {
+        const isClickInside = toggleBtn.contains(event.target) || navbarCollapse.contains(event.target);
+        if (!isClickInside && navbarCollapse.classList.contains("show")) {
+          navbarCollapse.classList.remove("show");
+          toggleIcon.classList.add("fa-bars");
+          toggleIcon.classList.remove("fa-times");
+        }
+      });
+
+      const links = document.querySelectorAll(".nav-link");
+      const sections = document.querySelectorAll("section");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 100;
+          if (scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        links.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
